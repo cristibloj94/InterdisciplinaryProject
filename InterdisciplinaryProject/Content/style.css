@@ -1,0 +1,146 @@
+﻿.format {
+    max-width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.center {
+    text-align: center;
+    color: #ffffff;
+}
+
+.area-one {
+    width: 63%;
+    float: left;
+    height: 74.7%;
+    /* margin-right: 0em; */
+    /* padding: 30px; */
+    background: red;
+    color: white;
+}
+
+.area-two {
+    width: 37%;
+    float: left;
+    height: 74.7%;
+    /* padding: 30px; */
+    color: #000000;
+    text-align: justify;
+    padding: 20px 40px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.item {
+    float: left;
+    width: 50%;
+    margin: 25px 0px 25px 0;
+}
+
+.products {
+    margin: 50px 0px 25px 0;
+}
+
+.price {
+    float: left;
+    margin-top: 4px;
+}
+
+.add {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.basket {
+    position: fixed;
+    margin-top: -50px;
+    right: 0;
+    width: 25%;
+    height: 45%;
+    border: 1px solid #ccc;
+}
+
+.basket-top {
+    height: 15%;
+    background: #ccc;
+    text-align: center;
+}
+
+.basket-top h4 {
+    margin-top: auto;
+    /* margin-top: 10px; */
+    padding-top: 15px;
+}
+
+.basket-container {
+    height: 70%;
+    padding-top: 15px;
+}
+
+.basket-container p {
+    float: left;
+}
+
+.basket-container p:nth-child(1) {
+    margin-left: 15px;
+}
+
+.basket-container p:nth-child(2) {
+    margin-left: 40px;
+}
+
+.basket-container p:nth-child(3) {
+    margin-left: 111px;
+}
+
+.basket-container p:nth-child(4) {
+    margin-left: 21px;
+}
+
+.basket-container p:nth-child(5) {
+    margin-left: 48px;
+}
+
+.basket-container p:nth-child(6) {
+    margin-left: 104px;
+}
+
+.cristi1 {
+    margin-left: 21px;
+}
+
+.cristi2 {
+    margin-left: 48px;
+}
+
+.cristi3 {
+    margin-left: 104px;
+}
+
+.basket-bottom {
+    height: 15%;
+    background: #ccc;
+}
+
+.basket-bottom p {
+    float: left;
+    margin-left: 15px;
+    margin-top: 12px;
+}
+
+.basket-bottom button {
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+}

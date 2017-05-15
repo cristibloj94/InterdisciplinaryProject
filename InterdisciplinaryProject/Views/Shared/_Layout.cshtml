@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Ching Chong China</title>
+    <link href="~/Content/navigation.css" rel="stylesheet" />
+    <link href="~/Content/fyuse.css" rel="stylesheet" />
+    <link href="~/Content/footer.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="clearfix">
+        <div class="container">
+            @*<div class="header-left">
+                    <h1>Ching Chong China</h1>
+                </div>*@
+            <div class="header-right">
+                <label for="open">
+                    <span class="hidden-desktop"></span>
+                </label>
+                <input type="checkbox" name="" id="open">
+                <nav>
+                    @Html.ActionLink("Home", "Index", "Home")
+                    @Html.ActionLink("Menu", "Index", "lineItems")
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="separator">
+        <div class="inline">
+            <div class="slogan"><h1>Slogan</h1></div>
+            <div class="social-media-icons">
+                @*<img src="~/Images/facebook.png" width="25" height="25" alt="Facebook Icon" />
+                    <img src="~/Images/instagram.png" width="25" height="25" alt="Facebook Icon" />*@
+                <h1><a href="#"><img src="~/Gallery/facebook.png" width="25" height="25" alt="Facebook Icon" /></a></h1>
+                <h1><a href="#"><img src="~/Gallery/instagram.png" width="25" height="25" alt="Instagram Icon" /></a></h1>
+            </div>
+        </div>
+    </section>
+
+    <div class="wrapper ">
+        @RenderBody()
+    </div>
+
+    <section style="background: #ea3333; color: #ffffff; height: 40px; float: left;"></section>
+
+    <footer style="height: 50px; float: left; width: 100%;" class="footer">
+        <h4 class="copyright center">&copy; @DateTime.Now.Year - Ching Chong China</h4>
+    </footer>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+    <script>
+        $(".basket").hide();
+
+        var clicks = 0;
+
+        function addToBasket(   ) {
+            setTimeout(function () {
+                $('.basket').show(300);
+            }, 100);
+
+            if ($(".add").click === true) {
+                clicks++;
+            }
+            console.log(clicks.toString());
+        }
+    </script>
+
+    <script>
+            var clicks = 0;
+
+            $(document).ready(function () {
+                $(".add").click(function () {
+                    clicks++;
+                    $(".basket-container").append("<p>" + clicks.toString() + "</p>");
+                    $(".basket-container").append("<p>Product nr. 3</p>");
+                    $(".basket-container").append('<p class="cristi">145.00 kr.</p>');
+                });
+                $("#btn2").click(function () {
+                    $("ol").append("<li>Appended item</li>");
+                });
+            });
+        </script>
+
+</body>
+</html>
