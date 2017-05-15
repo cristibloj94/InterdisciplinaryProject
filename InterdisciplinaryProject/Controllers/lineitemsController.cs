@@ -12,7 +12,7 @@ namespace InterdisciplinaryProject.Controllers
 {
     public class lineitemsController : Controller
     {
-        private imageEntities db = new imageEntities();
+        private imageDBEntities db = new imageDBEntities();
 
         // GET: lineitems
         public ActionResult Index()

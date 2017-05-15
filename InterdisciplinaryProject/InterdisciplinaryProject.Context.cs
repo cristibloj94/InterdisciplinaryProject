@@ -13,10 +13,10 @@ namespace InterdisciplinaryProject
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class imageEntities : DbContext
+    public partial class imageDBEntities : DbContext
     {
-        public imageEntities()
-            : base("name=imageEntities")
+        public imageDBEntities()
+            : base("name=imageDBEntities")
         {
         }
     

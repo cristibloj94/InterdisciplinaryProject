@@ -55,38 +55,9 @@
 
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 
-    <script>
-        $(".basket").hide();
+    <script src="~/Scripts/js/script.js"></script>
 
-        var clicks = 0;
-
-        function addToBasket(   ) {
-            setTimeout(function () {
-                $('.basket').show(300);
-            }, 100);
-
-            if ($(".add").click === true) {
-                clicks++;
-            }
-            console.log(clicks.toString());
-        }
-    </script>
-
-    <script>
-            var clicks = 0;
-
-            $(document).ready(function () {
-                $(".add").click(function () {
-                    clicks++;
-                    $(".basket-container").append("<p>" + clicks.toString() + "</p>");
-                    $(".basket-container").append("<p>Product nr. 3</p>");
-                    $(".basket-container").append('<p class="cristi">145.00 kr.</p>');
-                });
-                $("#btn2").click(function () {
-                    $("ol").append("<li>Appended item</li>");
-                });
-            });
-        </script>
+    
 
 </body>
 </html>
