@@ -21,6 +21,7 @@ namespace InterdisciplinaryProject.Controllers
         }
 
         // GET: lineitems/Details/5
+        [HttpPost]
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -28,11 +29,15 @@ namespace InterdisciplinaryProject.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             lineitem lineitem = db.lineitems.Find(id);
+            Console.WriteLine(lineitem);
             if (lineitem == null)
             {
                 return HttpNotFound();
             }
-            return View(lineitem);
+
+            var objectToSend = new { Id = lineitem.lineitemid, Name = lineitem.name, Price = lineitem.price, Description = lineitem.description };
+
+            return Json(objectToSend);
         }
 
         // GET: lineitems/Create

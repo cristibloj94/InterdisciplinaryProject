@@ -104,7 +104,7 @@
     <Content Include="Gallery\20170414_141432.jpg" />
     <Content Include="Gallery\20170415_174013.jpg" />
     <Content Include="Gallery\20170415_181108.jpg" />
-    <Content Include="Gallery\20170415_191055.jpg" />
+    <Content Include="Gallery\Image01.jpg" />
     <Content Include="Gallery\20170422_214333.jpg" />
     <Content Include="Gallery\Image00.jpg" />
     <Content Include="Gallery\facebook.png" />
@@ -131,14 +131,17 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\script.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Shared\_Andi.cshtml" />
+    <Content Include="Views\Shared\_productPartialView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />

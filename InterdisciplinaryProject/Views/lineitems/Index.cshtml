@@ -25,75 +25,22 @@
             </table>
         </div>
         <div class="basket-bottom">
-            <p><strong>Total: xxxxx</strong></p>
+            <p><strong class="total-price">Total: </strong></p>
             <button class="btn-primary">To checkout</button>
         </div>
     </div>
 
-    @*<h2>Index</h2>
-
-        <p>
-            @Html.ActionLink("Create New", "Create")
-        </p>
-        <table class="table">
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.name)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.price)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.description)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.imagePath)
-                </th>
-                <th></th>
-            </tr>
-
-        @foreach (var item in Model) {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.price)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.description)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.imagePath)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id=item.lineitemid }) |
-                    @Html.ActionLink("Details", "Details", new { id=item.lineitemid }) |
-                    @Html.ActionLink("Delete", "Delete", new { id=item.lineitemid })
-                </td>
-            </tr>
-        }
-
-        </table>*@
-
     <div style="width: 80%;">
 
         <h1 class="products">Products</h1>
-
+        
         @foreach (var item in Model)
         {
-            <div class="item">
-                <h3 class="name">@item.name</h3>
-                <p><img width="400" height="auto" src="~/Gallery/@item.imagePath" alt="Alternate Text" /></p>
-                <p>Description: @item.description</p>
-                <p class="price">Price: @item.price kr.</p>
-                <button onclick="addToBasket()" class="add">+</button>
-            </div>
+            @Html.Partial("_productPartialView", item);
         }
     </div>
 
     <div style="clear: both;"></div>
-
-    @Html.Partial("_Andi")
+    
 
 </div>

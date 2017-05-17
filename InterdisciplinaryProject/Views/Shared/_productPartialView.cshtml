@@ -1,0 +1,23 @@
+﻿@model lineitem
+    @{ 
+        ViewBag.Title = "partialView";
+        var lineItem = Model;
+
+        AjaxOptions ajaxOpts = new AjaxOptions
+        {
+            HttpMethod = "Post",
+            OnSuccess = "HandleResponseJSON", //this is the method on the client side, called AFTER the server side
+            Url = Url.Action("Details", "lineitems")  //This is the Home/InsertGuest method on the server side
+        };
+    }
+<div class="item">
+    <h3 class="name">@lineItem.name</h3>
+    <p><img width="400" height="auto" src="~/Gallery/@lineItem.imagePath" alt="Alternate Text" /></p>
+    <p>Description: @lineItem.description</p>
+    <p class="price">Price: @lineItem.price kr.</p>
+    @using (Ajax.BeginForm(ajaxOpts))
+    {
+        @Html.Hidden("id", @lineItem.lineitemid);
+        <button type="submit" class="add">+</button>
+    }
+</div>
