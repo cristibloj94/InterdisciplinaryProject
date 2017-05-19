@@ -42,7 +42,7 @@
           <Property Name="datecreated" Type="date" Nullable="false" />
           <Property Name="delivery_address" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <Association Name="FK__orderline__linei__2C3393D0">
+        <Association Name="FK__orderline__linei__2A4B4B5E">
           <End Role="lineitem" Type="Self.lineitem" Multiplicity="0..1" />
           <End Role="orderline" Type="Self.orderline" Multiplicity="*" />
           <ReferentialConstraint>
@@ -54,7 +54,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__orderline__reser__2D27B809">
+        <Association Name="FK__orderline__reser__2B3F6F97">
           <End Role="reservation" Type="Self.reservation" Multiplicity="0..1" />
           <End Role="orderline" Type="Self.orderline" Multiplicity="*" />
           <ReferentialConstraint>
@@ -66,7 +66,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__reservati__custI__29572725">
+        <Association Name="FK__reservati__custI__276EDEB3">
           <End Role="customer" Type="Self.customer" Multiplicity="0..1" />
           <End Role="reservation" Type="Self.reservation" Multiplicity="*" />
           <ReferentialConstraint>
@@ -83,15 +83,15 @@
           <EntitySet Name="lineitem" EntityType="Self.lineitem" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="orderline" EntityType="Self.orderline" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="reservation" EntityType="Self.reservation" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__orderline__linei__2C3393D0" Association="Self.FK__orderline__linei__2C3393D0">
+          <AssociationSet Name="FK__orderline__linei__2A4B4B5E" Association="Self.FK__orderline__linei__2A4B4B5E">
             <End Role="lineitem" EntitySet="lineitem" />
             <End Role="orderline" EntitySet="orderline" />
           </AssociationSet>
-          <AssociationSet Name="FK__orderline__reser__2D27B809" Association="Self.FK__orderline__reser__2D27B809">
+          <AssociationSet Name="FK__orderline__reser__2B3F6F97" Association="Self.FK__orderline__reser__2B3F6F97">
             <End Role="reservation" EntitySet="reservation" />
             <End Role="orderline" EntitySet="orderline" />
           </AssociationSet>
-          <AssociationSet Name="FK__reservati__custI__29572725" Association="Self.FK__reservati__custI__29572725">
+          <AssociationSet Name="FK__reservati__custI__276EDEB3" Association="Self.FK__reservati__custI__276EDEB3">
             <End Role="customer" EntitySet="customer" />
             <End Role="reservation" EntitySet="reservation" />
           </AssociationSet>
@@ -109,7 +109,7 @@
           <Property Name="custname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="phonenr" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="reservations" Relationship="Self.FK__reservati__custI__29572725" FromRole="customer" ToRole="reservation" />
+          <NavigationProperty Name="reservations" Relationship="Self.FK__reservati__custI__276EDEB3" FromRole="customer" ToRole="reservation" />
         </EntityType>
         <EntityType Name="lineitem">
           <Key>
@@ -120,7 +120,7 @@
           <Property Name="price" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="description" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
           <Property Name="imagePath" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="orderlines" Relationship="Self.FK__orderline__linei__2C3393D0" FromRole="lineitem" ToRole="orderline" />
+          <NavigationProperty Name="orderlines" Relationship="Self.FK__orderline__linei__2A4B4B5E" FromRole="lineitem" ToRole="orderline" />
         </EntityType>
         <EntityType Name="orderline">
           <Key>
@@ -130,8 +130,8 @@
           <Property Name="quantity" Type="Int32" Nullable="false" />
           <Property Name="lineitemid" Type="Int32" />
           <Property Name="reservationid" Type="Int32" />
-          <NavigationProperty Name="lineitem" Relationship="Self.FK__orderline__linei__2C3393D0" FromRole="orderline" ToRole="lineitem" />
-          <NavigationProperty Name="reservation" Relationship="Self.FK__orderline__reser__2D27B809" FromRole="orderline" ToRole="reservation" />
+          <NavigationProperty Name="lineitem" Relationship="Self.FK__orderline__linei__2A4B4B5E" FromRole="orderline" ToRole="lineitem" />
+          <NavigationProperty Name="reservation" Relationship="Self.FK__orderline__reser__2B3F6F97" FromRole="orderline" ToRole="reservation" />
         </EntityType>
         <EntityType Name="reservation">
           <Key>
@@ -141,10 +141,10 @@
           <Property Name="custID" Type="Int32" />
           <Property Name="datecreated" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="delivery_address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="customer" Relationship="Self.FK__reservati__custI__29572725" FromRole="reservation" ToRole="customer" />
-          <NavigationProperty Name="orderlines" Relationship="Self.FK__orderline__reser__2D27B809" FromRole="reservation" ToRole="orderline" />
+          <NavigationProperty Name="customer" Relationship="Self.FK__reservati__custI__276EDEB3" FromRole="reservation" ToRole="customer" />
+          <NavigationProperty Name="orderlines" Relationship="Self.FK__orderline__reser__2B3F6F97" FromRole="reservation" ToRole="orderline" />
         </EntityType>
-        <Association Name="FK__reservati__custI__29572725">
+        <Association Name="FK__reservati__custI__276EDEB3">
           <End Role="customer" Type="Self.customer" Multiplicity="0..1" />
           <End Role="reservation" Type="Self.reservation" Multiplicity="*" />
           <ReferentialConstraint>
@@ -156,7 +156,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__orderline__linei__2C3393D0">
+        <Association Name="FK__orderline__linei__2A4B4B5E">
           <End Role="lineitem" Type="Self.lineitem" Multiplicity="0..1" />
           <End Role="orderline" Type="Self.orderline" Multiplicity="*" />
           <ReferentialConstraint>
@@ -168,7 +168,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__orderline__reser__2D27B809">
+        <Association Name="FK__orderline__reser__2B3F6F97">
           <End Role="reservation" Type="Self.reservation" Multiplicity="0..1" />
           <End Role="orderline" Type="Self.orderline" Multiplicity="*" />
           <ReferentialConstraint>
@@ -185,15 +185,15 @@
           <EntitySet Name="lineitems" EntityType="Self.lineitem" />
           <EntitySet Name="orderlines" EntityType="Self.orderline" />
           <EntitySet Name="reservations" EntityType="Self.reservation" />
-          <AssociationSet Name="FK__reservati__custI__29572725" Association="Self.FK__reservati__custI__29572725">
+          <AssociationSet Name="FK__reservati__custI__276EDEB3" Association="Self.FK__reservati__custI__276EDEB3">
             <End Role="customer" EntitySet="customers" />
             <End Role="reservation" EntitySet="reservations" />
           </AssociationSet>
-          <AssociationSet Name="FK__orderline__linei__2C3393D0" Association="Self.FK__orderline__linei__2C3393D0">
+          <AssociationSet Name="FK__orderline__linei__2A4B4B5E" Association="Self.FK__orderline__linei__2A4B4B5E">
             <End Role="lineitem" EntitySet="lineitems" />
             <End Role="orderline" EntitySet="orderlines" />
           </AssociationSet>
-          <AssociationSet Name="FK__orderline__reser__2D27B809" Association="Self.FK__orderline__reser__2D27B809">
+          <AssociationSet Name="FK__orderline__reser__2B3F6F97" Association="Self.FK__orderline__reser__2B3F6F97">
             <End Role="reservation" EntitySet="reservations" />
             <End Role="orderline" EntitySet="orderlines" />
           </AssociationSet>

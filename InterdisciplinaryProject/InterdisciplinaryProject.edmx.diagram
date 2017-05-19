@@ -4,14 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="1ed3f1f37fb64c0aa8c12b440a32410c" Name="Diagram1">
+      <Diagram DiagramId="c38771b6b4c24e5facb5cabbe967f81a" Name="Diagram1">
         <EntityTypeShape EntityType="imageModel.customer" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="imageModel.lineitem" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
         <EntityTypeShape EntityType="imageModel.orderline" Width="1.5" PointX="5.25" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="imageModel.reservation" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <AssociationConnector Association="imageModel.FK__reservati__custI__29572725" ManuallyRouted="false" />
-        <AssociationConnector Association="imageModel.FK__orderline__linei__2C3393D0" ManuallyRouted="false" />
-        <AssociationConnector Association="imageModel.FK__orderline__reser__2D27B809" ManuallyRouted="false" />
+        <AssociationConnector Association="imageModel.FK__reservati__custI__276EDEB3" ManuallyRouted="false" />
+        <AssociationConnector Association="imageModel.FK__orderline__linei__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="imageModel.FK__orderline__reser__2B3F6F97" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

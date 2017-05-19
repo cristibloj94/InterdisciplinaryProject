@@ -3,20 +3,20 @@
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none
+    -ms-user-select: none;
 }
 
 .fyu_controls a, .fyu_controls a:hover, .fyu_wrapper a {
     color: #fff;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .fyu_close, .fyu_controls a, .fyubtn, .no_viewer .links {
-    text-align: center
+    text-align: center;
 }
 
 .fyu_close, .fyubtn {
-    text-indent: -9999px
+    text-indent: -9999px;
 }
 
 #fyu_cover, .fyu_clickndrag, .fyu_wrapper, .fyubtn {
@@ -24,26 +24,26 @@
     webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
-    font-size: 12px
+    font-size: 12px;
 }
 
 .fyu_container {
-    background-color: #666
+    background-color: #666;
 }
 
-.fyu_vertical {
+/*.fyu_vertical {
     min-width: 160px;
     min-height: 284px;
     max-width: 320px;
-    max-height: 568px
+    max-height: 568px;
 }
 
 .fyu_horizontal {
     min-width: 284px;
     min-height: 160px;
     max-width: 568px;
-    max-height: 320px
-}
+    max-height: 320px;
+}*/
 
 .fyu_wrapper {
     padding: 0;
@@ -53,28 +53,28 @@
     position: relative;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
-    tap-highlight-color: transparent
+    tap-highlight-color: transparent;
 }
 
     .fyu_wrapper > div {
         width: 100%;
         height: 100%;
-        position: relative
+        position: relative;
     }
 
 .fyu_horizontal .fyu_wrapper > div {
     height: 0;
-    padding-bottom: 56.25%
+    padding-bottom: 56.25%;
 }
 
 .fyu_vertical .fyu_wrapper > div {
     height: 0;
-    padding-bottom: 177%
+    padding-bottom: 177%;
 }
 
 .fyu_wrapper embed, .fyu_wrapper object {
     height: 100%;
-    width: 100%
+    width: 100%;
 }
 
 .fyu_wrapper .plBtn {
@@ -88,19 +88,19 @@
     left: 50%;
     top: 50%;
     margin-left: -230px;
-    margin-top: -230px
+    margin-top: -230px;
 }
 
     .fyu_wrapper .plBtn.vrt {
-        background: url(https://fyu.se/assets/viewer/arr-v.png) center center no-repeat
+        background: url(https://fyu.se/assets/viewer/arr-v.png) center center no-repeat;
     }
 
 .plBtn:hover {
-    opacity: .85
+    opacity: .85;
 }
 
 .fallback_root, .fyuv .fyumsg.hidden, .fyuv:hover .fyumsg, .fyv:hover .fyu_clickndrag, .noselect.fyuse .fyumsg {
-    opacity: 0
+    opacity: 0;
 }
 
 .no_viewer .links {
@@ -109,7 +109,7 @@
     z-index: 2;
     left: 0;
     right: 0;
-    top: 50%
+    top: 50%;
 }
 
     .no_viewer .links a {
@@ -123,16 +123,16 @@
         font-weight: 400;
         font-size: 18px;
         border-radius: 0;
-        text-shadow: 0 1px 1px #fff
+        text-shadow: 0 1px 1px #fff;
     }
 
 .no_viewer {
     height: 100%;
-    background: #fff
+    background: #fff;
 }
 
 .fallback_viewer img.act {
-    display: block
+    display: block;
 }
 
 .fallback_viewer img {
@@ -143,7 +143,7 @@
     display: none;
     -webkit-transform: translate3d(0,0,0);
     -moz-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0)
+    transform: translate3d(0,0,0);
 }
 
 .fallback_viewer .cover {
@@ -151,11 +151,11 @@
     height: 100%;
     position: absolute;
     z-index: 101;
-    user-select: none
+    user-select: none;
 }
 
 .portr .fallback_viewer {
-    max-height: 450px
+    max-height: 450px;
 }
 
 .fallback_viewer {
@@ -170,79 +170,79 @@
     -moz-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
     -webkit-transition: opacity .3s;
-    transition: opacity .3s
+    transition: opacity .3s;
 }
 
 .fallback_root {
-    visibility: hidden
+    visibility: hidden;
 }
 
 .lands img {
-    height: 100%
+    height: 100%;
 }
 
 .lands.ratioSmall img {
     width: 100%;
-    height: auto
+    height: auto;
 }
 
 .portr.ratioSmall img {
-    height: 100%
+    height: 100%;
 }
 
 .portr.ratioSmall .fallback_viewer, .portr.ratioSmall > img {
-    max-height: 580px
+    max-height: 580px;
 }
 
 .mobile .vert #cnt .inner {
-    max-height: 900px
+    max-height: 900px;
 }
 
 .lands.ratioSmall div img, .portr.ratioLarge div img {
-    max-height: inherit
+    max-height: inherit;
 }
 
 .portr.ratioSmall div img {
     max-height: inherit;
     height: auto;
-    width: 100%
+    width: 100%;
 }
 
 .fyuv img, .fyv img {
     display: block;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .fyuv.horiz, .fyv.horiz {
-    cursor: url(https://fyu.se/assets/viewer/cursor_h.gif) 24 16,col-resize
+    cursor: url(https://fyu.se/assets/viewer/cursor_h.gif) 24 16,col-resize;
 }
 
 .fyuv.vert, .fyv.vert {
-    cursor: url(https://fyu.se/assets/viewer/cursor_v.gif) 16 24,row-resize
+    cursor: url(https://fyu.se/assets/viewer/cursor_v.gif) 16 24,row-resize;
 }
 
 .fyuv.horiz.fyvhover, .fyv.horiz.fyvhover {
-    cursor: url(https://fyu.se/assets/viewer/cursor_h_hover@0.5x.png) 24 16,col-resize
+    cursor: url(https://fyu.se/assets/viewer/cursor_h_hover@0.5x.png) 24 16,col-resize;
 }
 
 .fyuv.vert.fyvhover, .fyv.vert.fyvhover {
-    cursor: url(https://fyu.se/assets/viewer/cursor_v_hover@0.5x.png) 16 24,row-resize
+    cursor: url(https://fyu.se/assets/viewer/cursor_v_hover@0.5x.png) 16 24,row-resize;
 }
 
 #fyu_cover .fyuse .horiz, .fyu_wrapper.fyuse .horiz {
-    cursor: url(https://fyu.se/assets/viewer/cursor_hgrab.gif) 24 16,col-resize
+    cursor: url(https://fyu.se/assets/viewer/cursor_hgrab.gif) 24 16,col-resize;
 }
 
 #fyu_cover .fyuse .vert, .fyu_wrapper.fyuse .vert {
-    cursor: url(https://fyu.se/assets/viewer/cursor_vgrab.gif) 16 24,row-resize
+    cursor: url(https://fyu.se/assets/viewer/cursor_vgrab.gif) 16 24,row-resize;
 }
 
 .fyuse #fyu_cover .horiz, .fyuse .horiz {
-    cursor: url(https://fyu.se/assets/viewer/cursor_hgrab.gif) 24 16,col-resize
+    cursor: url(https://fyu.se/assets/viewer/cursor_hgrab.gif) 24 16,col-resize;
 }
 
 .fyuse #fyu_cover .vert, .fyuse .vert {
-    cursor: url(https://fyu.se/assets/viewer/cursor_vgrab.gif) 16 24,row-resize
+    cursor: url(https://fyu.se/assets/viewer/cursor_vgrab.gif) 16 24,row-resize;
 }
 
 #fyu_cover [data-parent], .fyuv, .fyv {
@@ -250,15 +250,15 @@
     display: block;
     position: relative;
     height: 100%;
-    width: 100%
+    width: 100%;
 }
 
 .fyuv, .fyv {
-    cursor: default
+    cursor: default;
 }
 
 .fyu_dschldr, .fyu_symbol {
-    cursor: auto
+    cursor: auto;
 }
 
 .fyu_wrapper canvas {
@@ -267,7 +267,7 @@
     top: 0;
     -webkit-tap-highlight-color: transparent;
     tap-highlight-color: transparent;
-    user-select: none
+    user-select: none;
 }
 
 .fyu_symbol, .noselect, body.fyuse, body.noselect {
@@ -275,7 +275,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-touch-callout: none;
-    -khtml-user-select: none
+    -khtml-user-select: none;
 }
 
 .fyu_clickndrag, .fyuv .fyumsg {
@@ -289,7 +289,7 @@
     bottom: 10px;
     left: 10px;
     background: url(https://fyu.se/assets/viewer/icn_360.png) 50% 50% no-repeat;
-    text-indent: -9999px
+    text-indent: -9999px;
 }
 
 .fyu_symbol {
@@ -302,48 +302,48 @@
     top: -22px;
     z-index: 101;
     background-size: 48px;
-    user-select: none
+    user-select: none;
 }
 
 a.fyu_symbol {
-    cursor: pointer
+    cursor: pointer;
 }
 
 .noselect, body.fyuse, body.noselect {
     cursor: default;
-    user-select: none
+    user-select: none;
 }
 
 .fyu_wrapper .ldr2 {
-    overflow: visible
+    overflow: visible;
 }
 
 body .ldr.stopped, body .ldr2.stopped i, body .ldr2.stopped span, body .stopped .ldr2 i, body .stopped .ldr2 span {
     opacity: 0;
-    -webkit-animation-state: paused
+    -webkit-animation-state: paused;
 }
 
 .fyu_wrapper .clear {
-    clear: both !important
+    clear: both !important;
 }
 
 @-moz-keyframes spin {
     0% {
-        -moz-transform: rotate(0)
+        -moz-transform: rotate(0);
     }
 
     100% {
-        -moz-transform: rotate(360deg)
+        -moz-transform: rotate(360deg);
     }
 }
 
 @-webkit-keyframes spin {
     0% {
-        -webkit-transform: rotate(0)
+        -webkit-transform: rotate(0);
     }
 
     100% {
-        -webkit-transform: rotate(360deg)
+        -webkit-transform: rotate(360deg);
     }
 }
 
@@ -351,21 +351,21 @@ body .ldr.stopped, body .ldr2.stopped i, body .ldr2.stopped span, body .stopped 
     -webkit-transform: rotate(-92deg);
     -moz-transform: rotate(-92deg);
     transform: rotate(-92deg);
-    transition: opacity .2s
+    transition: opacity .2s;
 }
 
     .fyu_wrapper #svg circle {
         stroke-dashoffset: 0;
         stroke: rgba(90,90,90,.6);
-        stroke-width: 8px
+        stroke-width: 8px;
     }
 
     .fyu_wrapper #svg #bar {
-        stroke: #d84a3a
+        stroke: #d84a3a;
     }
 
     .fyu_wrapper #svg.fade {
-        opacity: 0
+        opacity: 0;
     }
 
 .fyu_controls {
@@ -375,11 +375,11 @@ body .ldr.stopped, body .ldr2.stopped i, body .ldr2.stopped span, body .stopped 
     height: 40px;
     opacity: 0;
     -webkit-transition: opacity .38s;
-    transition: opacity .38s
+    transition: opacity .38s;
 }
 
 .fyuv:hover .fyu_controls {
-    opacity: 1
+    opacity: 1;
 }
 
 .fyu_controls a {
@@ -394,24 +394,24 @@ body .ldr.stopped, body .ldr2.stopped i, body .ldr2.stopped span, body .stopped 
     font-size: 8px;
     font-weight: 700;
     cursor: pointer;
-    opacity: .78
+    opacity: .78;
 }
 
 .fyu_controls .pause.paused span, .fyuse_tag {
-    display: none
+    display: none;
 }
 
     .fyuse_tag a, .fyuse_tag_user a:hover {
-        text-decoration: none !important
+        text-decoration: none !important;
     }
 
 .fyu_controls a.x2 {
     background: url(https://fyu.se/assets/viewer/x2.png) 1px 6px no-repeat rgba(0,0,0,.62);
-    background-size: 32px
+    background-size: 32px;
 }
 
 .fyu_controls .play > span {
-    margin: 3px 5px
+    margin: 3px 5px;
 }
 
 .fyu_controls .play span span {
@@ -420,7 +420,7 @@ body .ldr.stopped, body .ldr2.stopped i, body .ldr2.stopped span, body .stopped 
     background: #f6f6f6;
     display: block;
     float: left;
-    margin-right: 3px
+    margin-right: 3px;
 }
 
 .fyu_controls .play .pause.paused {
@@ -431,7 +431,7 @@ body .ldr.stopped, body .ldr2.stopped i, body .ldr2.stopped span, body .stopped 
     height: 0;
     border-style: solid;
     border-width: 9px 0 9px 11px;
-    border-color: transparent transparent transparent #fff
+    border-color: transparent transparent transparent #fff;
 }
 
 .fyu_controls .play .pause.playing {
@@ -440,7 +440,7 @@ body .ldr.stopped, body .ldr2.stopped i, body .ldr2.stopped span, body .stopped 
     width: 20px;
     position: absolute;
     top: 9px;
-    left: 8px
+    left: 8px;
 }
 
 .fyu_desc {
@@ -457,7 +457,7 @@ body .ldr.stopped, body .ldr2.stopped i, body .ldr2.stopped span, body .stopped 
     opacity: 0;
     visibility: hidden;
     -webkit-transition: opacity .3s;
-    transition: opacity .3s
+    transition: opacity .3s;
 }
 
 .fyuv .fyu_lftbrdr, .fyuv .fyu_rghtbrdr {
@@ -465,31 +465,31 @@ body .ldr.stopped, body .ldr2.stopped i, body .ldr2.stopped span, body .stopped 
     width: 88px;
     position: absolute;
     top: 0;
-    z-index: 999
+    z-index: 999;
 }
 
 .fyuse_tag, .fyuse_tag a {
     color: #fff;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
 }
 
 .fyu_dschldr:hover .fyu_desc {
     opacity: 1;
-    visibility: visible
+    visibility: visible;
 }
 
 .fyuv .fyu_lftbrdr {
     background-image: -webkit-gradient(linear,left top,right top,from(rgba(250,250,250,.8)),to(rgba(255,255,255,0)));
     left: -100px;
     -webkit-transition: transform .01s;
-    transition: transform .01s
+    transition: transform .01s;
 }
 
 .fyuv .fyu_rghtbrdr {
     background-image: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),to(rgba(250,250,250,.8)));
     right: -100px;
     -webkit-transition: transform .01s;
-    transition: transform .01s
+    transition: transform .01s;
 }
 
 .fyuv.dy .fyu_rghtbrdr {
@@ -499,7 +499,7 @@ body .ldr.stopped, body .ldr2.stopped i, body .ldr2.stopped span, body .stopped 
     left: 0;
     top: auto;
     height: 100px;
-    width: 100%
+    width: 100%;
 }
 
 .fyuv.dy .fyu_lftbrdr {
@@ -508,12 +508,12 @@ body .ldr.stopped, body .ldr2.stopped i, body .ldr2.stopped span, body .stopped 
     top: -100px;
     left: 0;
     height: 100px;
-    width: 100%
+    width: 100%;
 }
 
 .fyu_actions, .fyuse_tag {
     width: auto;
-    position: absolute
+    position: absolute;
 }
 
 .fyuse_tag {
@@ -533,7 +533,7 @@ body .ldr.stopped, body .ldr2.stopped i, body .ldr2.stopped span, body .stopped 
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none
+    user-select: none;
 }
 
     .fyuse_tag:before {
@@ -544,40 +544,40 @@ body .ldr.stopped, body .ldr2.stopped i, body .ldr2.stopped span, body .stopped 
         content: '';
         left: calc(50% - 6px);
         position: absolute;
-        z-index: 99
+        z-index: 99;
     }
 
     .fyuse_tag a {
         opacity: .9;
         cursor: pointer;
-        text-shadow: none
+        text-shadow: none;
     }
 
 .fyu_actions {
     height: 40px;
     bottom: 10px;
     right: 10px;
-    z-index: 5
+    z-index: 5;
 }
 
     .fyu_actions.top_left, .fyu_actions.top_right {
         top: 10px;
-        bottom: initial
+        bottom: initial;
     }
 
     .fyu_actions.bottom_left, .fyu_actions.top_left {
         left: 10px;
-        right: initial
+        right: initial;
     }
 
     .fyu_actions.f_act_vert {
         height: auto;
-        width: 40px
+        width: 40px;
     }
 
         .fyu_actions.f_act_vert .fyubtn + .fyubtn {
             margin-left: 0;
-            margin-top: 6px
+            margin-top: 6px;
         }
 
 .fyubtn {
@@ -589,31 +589,31 @@ body .ldr.stopped, body .ldr2.stopped i, body .ldr2.stopped span, body .stopped 
     -webkit-transition: opacity .25s;
     -moz-transition: opacity .25s;
     transition: opacity .25s;
-    background: url(https://fyu.se/assets/viewer/action-icons.png) no-repeat
+    background: url(https://fyu.se/assets/viewer/action-icons.png) no-repeat;
 }
 
     .fyubtn.zoom-in {
-        background-position: -82px 0
+        background-position: -82px 0;
     }
 
     .fyubtn.x2 {
-        background-position: -246px 0
+        background-position: -246px 0;
     }
 
 #fyu_cover .fyubtn.x2 {
-    background-position: -164px 0
+    background-position: -164px 0;
 }
 
 .fyubtn.tags {
-    background-position: center right
+    background-position: center right;
 }
 
 .fyubtn + .fyubtn {
-    margin-left: 6px
+    margin-left: 6px;
 }
 
 .fyv:hover .fyubtn {
-    opacity: 1
+    opacity: 1;
 }
 
 .fyu_close {
@@ -627,11 +627,11 @@ body .ldr.stopped, body .ldr2.stopped i, body .ldr2.stopped span, body .stopped 
     text-shadow: none !important;
     width: 38px;
     height: 38px;
-    opacity: .82
+    opacity: .82;
 }
 
     .fyu_close:hover {
-        opacity: 1
+        opacity: 1;
     }
 
     .fyu_close:after, .fyu_close:before {
@@ -641,20 +641,107 @@ body .ldr.stopped, body .ldr2.stopped i, body .ldr2.stopped span, body .stopped 
         content: ' ';
         height: 19px;
         width: 3px;
-        background-color: #fc3549
+        background-color: #fc3549;
     }
 
     .fyu_close:before {
         transform: rotate(45deg);
-        -webkit-transform: rotate(45deg)
+        -webkit-transform: rotate(45deg);
     }
 
     .fyu_close:after {
         transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg)
+        -webkit-transform: rotate(-45deg);
     }
 
 .fyu_thumb {
     opacity: 0;
     /*transi…*/
 }
+
+
+@media (min-width: 1000px) {
+
+    .fyu_horizontal {
+        min-width: 100%;
+        min-height: 100%;
+        max-height:none;
+        max-width:none; 
+    }
+
+    .fyu_vertical {
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .fyu_container {
+        width: 100%;
+    }
+
+    .fyu_wrapper {
+        width: calc(100%);
+    }
+
+    #fyu1 {
+        height: 100%;
+    }
+
+    #fyu_wojixvm7a2 {
+        width: 1920px;
+        margin-right: 0px !important;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    #frontPage {
+        display: block;
+    }
+
+    .fyu_container {
+        width: 100%;
+    }
+
+    .fyu_wrapper {
+        width: calc(100%);
+    }
+
+    #fyu1 {
+        height: 100%;
+    }
+
+
+    #aboutChefArea {
+        background-color: #393939;
+        width: 100%;
+        height: 150px;
+        text-align: center;
+    }
+
+        #aboutChefArea h1 {
+            font-family: 'Chinese Takeaway';
+            color: #ffeb3b;
+            font-size: 24px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+
+        #aboutChefArea p {
+            font-family: 'GeosansLight';
+            color: #ffeb3b;
+            font-size: 16px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+    .fyu_ldr {
+        display: none;
+    }
+}
+
+
+
+
+/*style="width: calc(100% - 62.25%)";/
+
+// style="min-width: 62.25%; max-width: 568px; min-height: 160px; max-height: 100%; float: left;"

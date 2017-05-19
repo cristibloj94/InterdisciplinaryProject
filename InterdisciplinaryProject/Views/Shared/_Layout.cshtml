@@ -7,7 +7,7 @@
     <link href="~/Content/navigation.css" rel="stylesheet" />
     <link href="~/Content/fyuse.css" rel="stylesheet" />
     <link href="~/Content/footer.css" rel="stylesheet" />
-    <link href="~/Content/style.css" rel="stylesheet" />
+    @*<link href="~/Content/style.css" rel="stylesheet" />*@
 </head>
 
 <body>
@@ -29,11 +29,21 @@
                 </nav>
             </div>
         </div>
+        <div class="container2">
+            <div class="dropdown">
+                <button onclick="OpenDropdown()" class="dropbtn"><h1>Menu</h1></button>
+                <div id="myDropdown" class="dropdown-content">
+                    @Html.ActionLink("Home", "Index", "Home")
+                    @Html.ActionLink("Menu", "Index", "lineItems")
+                </div>
+            </div>
+        </div>
+
     </header>
 
     <section class="separator">
         <div class="inline">
-            <div class="slogan"><h1>Slogan</h1></div>
+            <div class="slogan"><h1>WITH GREAT EXPERIENCES COMES GREAT AESTHETIC QUALITY</h1></div>
             <div class="social-media-icons">
                 @*<img src="~/Images/facebook.png" width="25" height="25" alt="Facebook Icon" />
                     <img src="~/Images/instagram.png" width="25" height="25" alt="Facebook Icon" />*@
@@ -47,7 +57,7 @@
         @RenderBody()
     </div>
 
-    <section style="background: #ea3333; color: #ffffff; height: 40px; float: left;"></section>
+    <div class="bottomSeparator"></div>
 
     <footer style="height: 50px; float: left; width: 100%;" class="footer">
         <h4 class="copyright center">&copy; @DateTime.Now.Year - Ching Chong China</h4>
@@ -57,7 +67,7 @@
     <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
     <script src="~/Scripts/js/script.js"></script>
 
-    
+
 
 </body>
 </html>
